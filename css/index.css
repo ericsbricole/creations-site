@@ -1,13 +1,84 @@
+body {
+    /* background-image: linear-gradient(-90deg, gainsboro, white, gainsboro); */
+    background-color: rgba(245, 245, 245, 0.87);
+}
+
+.title-row h1 {
+    border-style: outset;
+    border-width: 1px;
+    border-color: silver;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    /* box-shadow: 2px 2px 2px #888888; */
+    background-color: gainsboro;
+}
+
+.title-row h1:hover {
+    background-color: steelblue;
+}
+
+.navParent {
+    padding: 0rem;
+}
+
+.navbar {
+    padding: 0rem;
+    box-shadow: 3px 3px 3px #888888;
+    margin: 0rem;
+}
+
+.nav-link {
+    background-color: gainsboro;
+    border-style: outset;
+    border-width: 2px;
+    /* border-color: silver; */
+    /* background-image: linear-gradient(white,silver,white); */
+    display: block;
+    margin: 0rem 1rem;
+    height: 7rem;
+  }
+
+  a.nav-link, a.nav-link:hover, a.nav-link:focus {
+    color: black;
+    text-decoration:none
+}
+
+a.nav-link:hover, .clicked {
+    background-color: steelblue;
+}
+
+.clicked span {
+    font-size: 25px;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+
+.containsSvg span{
+    font-size: 20px;
+}
+
+nav {
+    /* background-color: #00000017 */
+    background-image: linear-gradient(silver,white,silver)
+}
+
+/* specific to cvSections */
+span.incoming-program {
+    color: red
+}
+
 #eventPositionnerImage {
     width:90%;
     height:90%
 }
 
-a, a:hover, a:focus {
-    color: black;
-    text-decoration:none
+.carousel-item{
+    max-height: 600px;
+    max-width: 300px;
 }
 
-.containsA {
-    cursor: pointer;
+/*
+.carousel-item img {
+    max-height: 100px; 
 }
+*/
