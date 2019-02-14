@@ -13,8 +13,8 @@ body {
     background-color: gainsboro;
 }
 
-.title-row h1:hover {
-    background-color: steelblue;
+.name{
+    margin: 0 0 0 12px
 }
 
 .navParent {

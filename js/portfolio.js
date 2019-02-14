@@ -5,6 +5,8 @@ function initiatePage(){
   typeSlowly("h2.subTitle","Ingénieur de développement");
   //TODO? put a hidden attribute in the html and delete it after this hide(), in case they can be briefly seen.
   $(".cvSection").hide();
+  $("#about").show("slow");
+  $("#to_about").addClass("clicked");
   $("#ulNav>li>.containsSvg").on("click",function(evt){
     //I begin by hiding the previous currentView
     $(".currentView").hide();
@@ -18,19 +20,6 @@ function initiatePage(){
     }
     $("#" + idToShow).addClass("currentView");
   });
-
-
-
-  // $("#ulNav").on("click", "svg", drawNavSvg);
-  // function drawNavSvg(){
-  //   let d3NavSvg = d3.selectAll("#"+ this.id + " path");
-  //   d3NavSvg.attr("stroke-dasharray", function() {return this.getTotalLength() + " " + this.getTotalLength()})
-  //           .attr("stroke-dashoffset", function() { return this.getTotalLength(); })
-  //           .transition()
-  //           .duration(1500)
-  //           .ease(d3.easeLinear)
-  //           .attr("stroke-dashoffset", 0);
-  // }
 
   //the a.containsSvg tags will be listened for a ".active" class, triggering colors or animations
   let links = $("a.containsSvg");
@@ -143,7 +132,7 @@ function initiatePage(){
     .attr("stroke-dasharray", function() {return this.getTotalLength() + " " + this.getTotalLength()})
     .attr("stroke-dashoffset", function() { return this.getTotalLength(); })
     .transition()
-      .duration(1500)
+      .duration(2000)
       .ease(d3.easeLinear)
       .attr("stroke-dashoffset", 0)
     .transition()
