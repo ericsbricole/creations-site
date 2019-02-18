@@ -5,6 +5,7 @@ function initiatePage(){
   typeSlowly("h2.subTitle","Ingénieur de développement");
   //TODO? put a hidden attribute in the html and delete it after this hide(), in case they can be briefly seen.
   $(".cvSection").hide();
+  $(".cvSection").removeAttr("hidden");
   $("#about").show("slow");
   $("#to_about").addClass("clicked");
   $("#ulNav>li>.containsSvg").on("click",function(evt){

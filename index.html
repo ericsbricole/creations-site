@@ -154,14 +154,14 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <div id="about" class="cvSection currentView">
+            <div id="about" class="cvSection currentView" hidden>
                 <p>Bienvenue sur mon site CV et portfolio. Je m'appelle Eric Penneçot. Titulaire d'un baccalauréat scientifique obtenu à Libourne et d'un master en bio-informatique qui m'a permis d'acquérir de nouvelles compétences en informatique et programmation, obtenu après une formation initiale scientifique. Plus d'informations sur mon parcours à la page Formation.</p>
                 <br>
-                <p>Très curieux, je passe une part importante de mon temps libre à lire et regarder articles et documentaires pour répondre aux questions que je me pose spontanément sur mes nombreux sujets d'intérêts. J'ai donc une excellente culture générale dans des sujets aussi variés que l'informatique et les sciences bien sûr, mais aussi l'histoire, la géographie, les relations internationales et bien d'autres encore. L'extension de mes compétences à la programmation et mon souhait de faire carrière dans ce domaine témoignent de mon ouverture d'esprit et de ma capacité d'adaptation.</p>
+                <p>Très curieux, je passe une part importante de mon temps libre à lire et regarder articles et documentaires pour répondre aux questions que je me pose sur mes nombreux sujets d'intérêts. J'ai donc une excellente culture générale dans des sujets aussi variés que l'informatique et les sciences bien sûr, mais aussi l'histoire, la géographie, les relations internationales et bien d'autres encore. L'extension de mes compétences à la programmation et mon souhait de faire carrière dans ce domaine témoignent de mon ouverture d'esprit et de ma capacité d'adaptation.</p>
             </div>
         </div>
         <div class="col-12">
-            <div id="skills" class="col-12 justify-content-center align-items-center cvSection">
+            <div id="skills" class="col-12 justify-content-center align-items-center cvSection" hidden>
                 <div class="container-fluid  h-100">
                     <div class="row">
                         <p class="col-12">Ci-dessous mon auto-évaluation dans les principales technologies que je connais. Comme expliqué à la section Projet, j'ai pour objectif d'agrandir mon espace github d'un projet dans chacune de ces technologies. Je vous encourage donc à revenir sur mon site, où cette section d'auto-évaluation aura éventuellement changée en fonction de l'expérience obtenue sur mes projets personnels ou professionnels.</p>
@@ -285,7 +285,7 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="cvSection" id="experiences">
+            <div class="cvSection" id="experiences" hidden>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
@@ -339,15 +339,15 @@
                 </ul>
             </div>
         </div>
-        <div class="offset-1 col-10 offset-1 cvSection" id="projects">
+        <div class="offset-1 col-10 offset-1 cvSection" id="projects" hidden>
             <div class="row">
                 <div class="col-12">
-                    <p>Prochain programme: une application <span class="incoming-program">Angular 2+</span></p>
+                    <p>Prochain programme: une application <span class="incoming-program"><b>C#</b></span></p>
                     <p>Je code une part importante de mon temps libre et suis en permanence sur de nouveaux programmes à titre personnel. C'est pourquoi je vous invite à revenir de temps en temps sur cette page, vous pourriez voir la liste agrandie de nouveaux programmes, dans des languages ou des technologies chaque fois différente de la précédente! À ce jour, voici ceux que j'ai publiés sur mon espace <a href="https://github.com/ericsbricole?tab=repositories">github</a>, où vous pourrez trouver les codes sources.</p>
                 </div>
             </div>
             <br>
-
+            <br>
             <div class="row">
                 <div class="col-12 text-center">
                     <h3>eventPositionner</h3>
@@ -355,13 +355,15 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-md-8">
+                <div class="offset-1"></div>
+                <div class="col-md-7">
                     <img id="eventPositionnerImage" class="img-responsive" src="images/eventPositionnerImage.png">
                 </div>
-                <div class="col-md-3">
-                    <p>Il s'agit d'une mappemonde 2D interactive permettant de rentrer un fichier de données au format csv et de visualiser sur la carte les pays où les valeurs sont les plus importantes, à l'aide d'une légende automatique séparant les pays en 4 groupes égaux. Ce travail personnel est inspiré d'un projet de développement validant la fin de mon M1. Je l'ai développé en JavaScript avec les bibliothèques d3js, jQuery et jQueryUI. La partie html bénéficie quant à elle du framework css Bootstrap, ce qui lui permet de s'adapter à toutes les tailles d'écran («responsive design»). Les formes des pays proviennent d'un fichier shapefile (.sh) du site <a href="http://www.naturalearthdata.com/">NaturalEarth</a>. J'ai utilisé le logiciel QGis pour convertir ces données en GeoJson. Vous pouvez <a href="https://ericsbricole.github.io/eventPositionner/">tester</a> ce programme car il tourne, comme ce site, sur mes pages github.</p>
+                <div class="col-md-4">
+                    <p>Il s'agit d'une mappemonde 2D interactive permettant de rentrer un fichier de données au format csv et de visualiser sur la carte les pays où les valeurs sont les plus importantes, à l'aide d'une légende automatique séparant les pays en 4 groupes égaux. Ce travail personnel est inspiré d'un projet de développement validant la fin de mon M1. Je l'ai développé en <b>JavaScript</b> avec les bibliothèques <b>d3js</b>, <b>jQuery</b> et <b>jQueryUI</b>. La partie html bénéficie quant à elle du framework css <b>Bootstrap</b>, ce qui lui permet de s'adapter à toutes les tailles d'écran («responsive design»). Les formes des pays proviennent d'un fichier shapefile (.sh) du site <a href="http://www.naturalearthdata.com/">NaturalEarth</a>. J'ai utilisé le logiciel QGis pour convertir ces données en GeoJson. Vous pouvez <a href="https://ericsbricole.github.io/eventPositionner/">tester</a> ce programme car il tourne, comme ce site, sur mes pages github.</p>
                 </div>
             </div>
+            <br>
             <br>
             <div class="row">
                 <div class="col-12 text-center">
@@ -372,16 +374,16 @@
             <div class="row">
                 <div class="offset-2"></div>
                 <div class="col-md-4">
-                        <p>Déminons est une version paramétrable du célèbre jeu de démineur, développé en Java 8 avec la bibliothèque graphique JavaFX. Le joueur peut choisir la largeur et la hauteur de son plateau, ainsi que le nombre de bombes. Ce projet est nommé ainsi car je souhaitais en faire une application jouable à deux avec un espace de dialogue (chat). Cependant, j'ai appris que cela obligerait les joueurs à faire de la <a href="https://en.wikipedia.org/wiki/Port_forwarding">redirection de ports</a>. Ne souhaitant pas obliger mes utilisateurs à faire une manipulation qui puisse les rendre mal à l'aise, j'ai décidé de ne pas implémenter cette fonctionnalité. Je n'exclus pas de revenir un jour sur cette décision, mais j'ai préféré développer en priorité d'autres projets dont les fonctionnalités seraient explorables sans manipulation de la part de l'utilisateur.</p>
+                        <p>Déminons est une version paramétrable du célèbre jeu de démineur, développé en <b>Java 8</b> avec la bibliothèque graphique <b>JavaFX</b>. Le joueur peut choisir la largeur et la hauteur de son plateau, ainsi que le nombre de bombes. Ce projet est nommé ainsi car je souhaitais en faire une application jouable à deux avec un espace de dialogue (chat). Cependant, j'ai appris que cela obligerait les joueurs à faire de la <a href="https://en.wikipedia.org/wiki/Port_forwarding">redirection de ports</a>. Ne souhaitant pas obliger mes utilisateurs à faire une manipulation qui puisse les rendre mal à l'aise, j'ai décidé de ne pas implémenter cette fonctionnalité. Je n'exclus pas de revenir un jour sur cette décision, mais j'ai préféré développer en priorité d'autres projets dont les fonctionnalités seraient explorables sans manipulation de la part de l'utilisateur.</p>
                     </div>
-                    <div class="offset-2"
-                    <div class="col-md-3">
+                    <div class="offset-2"></div>
+                    <div class="col-md-4">
                         <div id="deminonsarousel" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
-                                    <div id="deminonsImage" class="carousel-item active">
+                                    <div id="deminonsImage" class="carousel-item active deminonsCarouselImage">
                                         <img class="d-block w-100" src="images/deminons.PNG" alt="First slide">
                                     </div>
-                                    <div class="carousel-item">
+                                    <div class="carousel-item deminonsCarouselImage">
                                         <img class="d-block w-100" src="images/deminons2.PNG" alt="Second slide">
                                     </div>
                                 </div>
@@ -396,6 +398,44 @@
                             </div>
                     </div>
                 </div>
+                <br>
+                <br>
+                <div class="row">
+                        <div class="col-12 text-center">
+                            <h3>GeoDemande</h3>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="offset-2"></div>
+                        <div class="col-md-4">
+                                <div id="geoDemandeCarousel" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div id="geoDemandeImage" class="carousel-item active geoDemandeCarouselImage">
+                                                <img class="d-block w-100 geoDemandeCarouselImage" src="images/GeoDemande.PNG" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item geoDemandeCarouselImage">
+                                                <img class="d-block w-100 geoDemandeCarouselImage" src="images/GeoDemande2.PNG" alt="Second slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#geoDemandeCarousel" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#geoDemandeCarousel" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="offset-2"></div>
+                        
+                            <div class="col-md-4">
+                                    <p>GeoDemande, que vous tester à <a href="https://ericsbricole.github.io/GeoDemande/">cette addresse</a>, est une application <b>Angular2+</b>, interface graphique de de l'API <a href="https://restcountries.eu/">RestCountries</a>, API distribuée sous licence <a href="http://www.mozilla.org/en-US/MPL/2.0/">MPL 2.0</a>. Cette application vous permet de chercher une liste de pays sous plusieurs critères offerts par RestCountries.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
                 <div class="row">
                         <div class="col-12 text-center">
                             <h3>ce site</h3>
@@ -405,13 +445,14 @@
                     <div class="row">
                         <div class="offset-1"></div>
                         <div class="col-12">
-                            <p>J'ai conçu ce site en html avec le framework css Bootstrap et du css personnalisé. Les animations telles que vous pouvez en voir à la section Compétences et le sous-titre de ce site sont en JavaScript, utilisant la bibliothèque d3js. Les autres animations quant à elles sont issues de jQuery.</p>
+                            <p>J'ai conçu ce site en <b>html</b> avec le framework css <b>Bootstrap</b> et du css personnalisé. Les animations telles que vous pouvez en voir à la section Compétences et le sous-titre de ce site sont en <b>JavaScript</b>, utilisant la bibliothèque <b>d3js</b>. Les autres animations quant à elles sont issues de <b>jQuery</b>.</p>
                         </div>
                     </div>
+                    <br>
             </div>
         </div>
         <div class="col-12">
-                <div id="education" class="cvSection">
+                <div id="education" class="cvSection" hidden>
                     <br>
                     <div class="row">
                         <div class="col-12">
@@ -490,7 +531,7 @@
                 </div>
             </div>
             <div class="col-12">
-                    <div id="contact" class="cvSection">
+                    <div id="contact" class="cvSection" hidden>
                         <div class="row">
                             <div class="offset-4"></div>
                             <div class="col-4">

@@ -72,9 +72,15 @@ span.incoming-program {
     height:90%
 }
 
-.carousel-item{
+.carousel-item.deminonsCarouselImage{
     max-height: 600px;
-    max-width: 300px;
+    max-width: 400px;
+}
+
+.geoDemandeCarouselImage {
+    min-height: 600px;
+    max-height: 600px;
+    max-width: 400px;
 }
 
 /*
