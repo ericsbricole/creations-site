@@ -2,66 +2,34 @@ $(document).ready(initiatePage);
 
 function initiatePage(){
 
-  typeSlowly("h2.subTitle","Ingénieur de développement");
-  //TODO? put a hidden attribute in the html and delete it after this hide(), in case they can be briefly seen.
-  $(".cvSection").hide();
-  $(".cvSection").removeAttr("hidden");
-  $("#about").show("slow");
-  $("#to_about").addClass("clicked");
-  $("#ulNav>li>.containsSvg").on("click",function(evt){
-    //I begin by hiding the previous currentView
-    $(".currentView").hide();
-    $(".currentView").removeClass("currentView");
-
-    let idToShow = $(this).filter("a").attr("href");
-    idToShow = idToShow.split("to_")[1]; //href actually leads to itself and the "a"s  trigger show()
-    $("#"+idToShow).show("slow");
-    if (idToShow === "skills"){
-      skills();
+  let modifySvg = function(mutations){
+    let svgToModify = $(mutations[0].target);
+    let svgId = svgToModify.attr("id");
+    let d3NavPaths = d3.selectAll("#" + svgId +" path")
+    // debugger;
+    if (svgToModify.hasClass("active") || svgToModify.hasClass("clicked") ){
+      d3NavPaths.attr("fill", function() {
+                      let path = d3.select(this);
+                      let colorToApply = path.attr("class");
+                      path.transition()
+                          .duration(0)
+                          .attr("fill", colorToApply);
+                    } )
     }
-    $("#" + idToShow).addClass("currentView");
-  });
+    else{
+      d3NavPaths.attr("fill", function() {
+        let path = d3.select(this);
+        let colorToApply = path.attr("class");
+        path.transition()
+            .duration(0)
+            .attr("fill", "none");
+      } )
+    }
+}
 
+let observer = new MutationObserver( modifySvg );
   //the a.containsSvg tags will be listened for a ".active" class, triggering colors or animations
   let links = $("a.containsSvg");
-  
-  var modifySvg = function(mutations){
-      let svgToModify = $(mutations[0].target);
-      let svgId = svgToModify.attr("id");
-      let d3NavPaths = d3.selectAll("#" + svgId +" path")
-      // debugger;
-      if (svgToModify.hasClass("active") || svgToModify.hasClass("clicked") ){
-        d3NavPaths.attr("fill", function() {
-                        let path = d3.select(this);
-                        let colorToApply = path.attr("class");
-                        path.transition()
-                            .duration(0)
-                            .attr("fill", colorToApply);
-                      } )
-      }
-      else{
-        d3NavPaths.attr("fill", function() {
-          let path = d3.select(this);
-          let colorToApply = path.attr("class");
-          path.transition()
-              .duration(0)
-              .attr("fill", "none");
-        } )
-      }
-  }
-
-  let restoreSvg = function(){
-    let svgId = $(this).children().get(1).id;
-    let d3NavPaths = d3.selectAll("#" + svgId +" path")
-                  .attr("fill", function() {
-                    let path = d3.select(this);
-                    path.transition()
-                        .duration(0)
-                        .attr("fill", "none");
-                  } )
-  }
-  let observer = new MutationObserver( modifySvg );
-
   links.each( function(){
     observer.observe( this, { attributes: true })
   } )
@@ -78,6 +46,37 @@ function initiatePage(){
     $(this).addClass("clicked");
   });
 
+  typeSlowly("h2.subTitle","Ingénieur de développement");
+  $(".cvSection").hide();
+  $(".cvSection").removeAttr("hidden");
+
+  let to_CvSection = $(location).attr('href').split("#")[1]; //for example: to_skills
+  if (to_CvSection){
+    $("#"+to_CvSection).addClass("clicked");
+    let cvSection = to_CvSection.split("_")[1]
+    $("#"+cvSection).addClass("currentView");
+    $("#"+cvSection).show("slow");
+    if (cvSection == "skills")
+      skills();
+  }
+  else{
+    $("#to_about").addClass("clicked");
+    $("#about").show("slow");
+  }
+
+  $("#ulNav>li>.containsSvg").on("click",function(evt){
+    //I begin by hiding the previous currentView
+    $(".currentView").hide();
+    $(".currentView").removeClass("currentView");
+
+    let idToShow = $(this).filter("a").attr("href");
+    idToShow = idToShow.split("to_")[1]; //href actually leads to itself and the "a"s  trigger show()
+    $("#"+idToShow).show("slow");
+    if (idToShow === "skills"){
+      skills();
+    }
+    $("#" + idToShow).addClass("currentView");
+  });
 
   function skills(){
     //befor any animation, removing the previous stars

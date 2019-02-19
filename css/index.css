@@ -3,6 +3,10 @@ body {
     background-color: rgba(245, 245, 245, 0.87);
 }
 
+h2.subTitle{
+    height: 55px;
+}
+
 .title-row h1 {
     border-style: outset;
     border-width: 1px;
