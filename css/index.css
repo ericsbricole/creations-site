@@ -13,7 +13,6 @@ h2.subTitle{
     border-color: silver;
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    /* box-shadow: 2px 2px 2px #888888; */
     background-color: gainsboro;
 }
 
@@ -31,25 +30,28 @@ h2.subTitle{
     margin: 0rem;
 }
 
-.nav-link {
+
+  a.nav-link {
     background-color: gainsboro;
     border-style: outset;
     border-width: 2px;
-    /* border-color: silver; */
-    /* background-image: linear-gradient(white,silver,white); */
     display: block;
     margin: 0rem 1rem;
     height: 7rem;
+    color: black;
+    text-decoration:none;
+      padding: 0rem 0.5rem 0rem 0.5rem;
+      box-shadow: 0px #888888;
+      transition: box-shadow 1s,
+                background-color 1s;
+  }
+  a.nav-link:hover,a.nav-link.clicked {
+      border-color: silver;
+    background-color: white;
+    border-color: silver;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.541);
   }
 
-  a.nav-link, a.nav-link:hover, a.nav-link:focus {
-    color: black;
-    text-decoration:none
-}
-
-a.nav-link:hover, .clicked {
-    background-color: steelblue;
-}
 
 .clicked span {
     font-size: 25px;

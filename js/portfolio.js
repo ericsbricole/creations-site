@@ -34,7 +34,7 @@ let observer = new MutationObserver( modifySvg );
     observer.observe( this, { attributes: true })
   } )
 
-  //those 3 listeners allow animations on svgs.
+  //the active class allows animations on svgs, clicked allows highlighting of the button.
   $("a.containsSvg").mouseenter(function() {
     $(this).addClass("active");
   });
@@ -79,11 +79,11 @@ let observer = new MutationObserver( modifySvg );
   });
 
   function skills(){
-    //befor any animation, removing the previous stars
+    //before any animation, removing the previous stars
     if (!$.isEmptyObject($("#skills svg")) ){
       $(".starDiv").children().remove();
     }
-  var skillPaths = d3.selectAll(".starDiv")
+  d3.selectAll(".starDiv")
     .append("svg")
     .append("path")
     .attr("width","100%");
@@ -97,7 +97,7 @@ let observer = new MutationObserver( modifySvg );
       starPath.addClass("halfStar");
     else if ($(this).hasClass("emptyStarDiv"))
       starPath.addClass("emptyStar");
-  })
+  });
 
   var defs = d3.selectAll("svg")
     .append("defs");
@@ -147,8 +147,7 @@ let observer = new MutationObserver( modifySvg );
           return "white";
       }
     });
-
-    correctBBox();
+    correctBBox($(".starDiv").children("svg"))
 }
 
 function typeSlowly(selector, content){
@@ -164,13 +163,13 @@ function typeSlowly(selector, content){
     setTimeout( () => {
       let text = svg.select("text");
       text.text( text.text() + newChar );
-      correctBBox();
+      correctBBox($(".subTitle > svg"));
     }, i*100, newChar, svg);
   }
 }
 
-function correctBBox(){
-  $("svg").each(function(){
+function correctBBox(jQuerySvg){
+  jQuerySvg.each(function(){
     let svg = this;
     let bbox = this.getBBox();
     svg.setAttribute("viewBox", (bbox.x-10)+" "+(bbox.y-10)+" "+(bbox.width+20)+" "+(bbox.height+20));
