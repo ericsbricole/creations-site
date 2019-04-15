@@ -46,7 +46,6 @@ let observer = new MutationObserver( modifySvg );
     $(this).addClass("clicked");
   });
 
-  typeSlowly("h2.subTitle","Ingénieur de développement");
   $(".cvSection").hide();
   $(".cvSection").removeAttr("hidden");
 
@@ -55,13 +54,13 @@ let observer = new MutationObserver( modifySvg );
     $("#"+to_CvSection).addClass("clicked");
     let cvSection = to_CvSection.split("_")[1]
     $("#"+cvSection).addClass("currentView");
-    $("#"+cvSection).show("slow");
+    $("#"+cvSection).slideDown("slow");
     if (cvSection == "skills")
       skills();
   }
   else{
     $("#to_about").addClass("clicked");
-    $("#about").show("slow");
+    $("#about").slideDown("slow");
   }
 
   $("#ulNav>li>.containsSvg").on("click",function(evt){
@@ -71,7 +70,7 @@ let observer = new MutationObserver( modifySvg );
 
     let idToShow = $(this).filter("a").attr("href");
     idToShow = idToShow.split("to_")[1]; //href actually leads to itself and the "a"s  trigger show()
-    $("#"+idToShow).show("slow");
+    $("#"+idToShow).slideDown("slow");
     if (idToShow === "skills"){
       skills();
     }

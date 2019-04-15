@@ -1,36 +1,37 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="utf-8" />
     <title>Eric Penneçot</title>
-    <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-            crossorigin="anonymous" />
-    <link rel="stylesheet"
-          href="css/index.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-            crossorigin="anonymous"></script>
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
-<body class="container-fluid">
+
+<body class="container-fluid" scroll="no">
     <div class="row title-row">
-        <div class="offset-sm-5 col-sm-2">
+        <div class="offset-sm-4 col-sm-3">
             <h1 class="text-center name">Eric Penneçot</h1>
         </div>
     </div>
     <div class="row title-row">
-        <div class="offset-sm-5 col-sm-7">
-            <h2 class="subTitle"></h2>
+        <div class="offset-sm-3 col-sm-7 offset-sm-3">
+            <h2>Ingénieur d'Études et Développement Java Fullstack</h2>
         </div>
     </div>
     <div class="row">
@@ -40,110 +41,45 @@
                 <div class="collapse navbar-collapse" id="toggledNav text-center">
                     <ul id="ulNav" class="navbar-nav m-auto">
                         <li class="nav-item">
-                                        <a id="to_about" class="nav-link containsSvg d-flex flex-column align-items-center" href="#to_about">
-                                            <span>À propos de moi</span>
-                                            <svg id="aboutSvg" height="53" width="53">
-                                                <g transform="translate(0.90087812,0.90082717)">
-                                                    <g transform="matrix(0.15013786,0,0,0.15013786,-19.367835,-19.217646)">
-                                                        <!-- cercle of i -->
-                                                        <g style="fill:none;stroke:#000000;stroke-width:12;stroke-linejoin:round"
-                                                            transform="translate(129,128)">
-                                                            <path class="beige" d="m 338.29,169.14 c 0,93.37 -75.78,169.15 -169.15,169.15 C 75.776,338.29 0,262.51 0,169.14 0,75.776 75.776,0 169.14,0 262.51,0 338.29,75.776 338.29,169.14 Z" />
-                                                        </g>
-                                                        <!-- i -->
-                                                        <g style="fill:none;stroke:#000000;stroke-width:12"
-                                                            transform="translate(265.1,165.98)">
-                                                            <path class="yellow" d="M 0,30.61 C 0,22.149 3.217,14.933 9.651,8.96 16.085,2.9873 23.793,0.001 32.773,0 c 9.115,0.001 16.89,2.9873 23.324,8.9599 6.434,5.9731 9.651,13.189 9.652,21.65 -10e-4,8.338 -3.218,15.555 -9.652,21.652 -6.434,5.972 -14.209,8.958 -23.324,8.958 -8.98,0 -16.688,-2.986 -23.122,-8.958 C 3.217,46.1649 0,38.9479 0,30.6099 Z m 62.933,57.301 v 176.2 H 3.217 v -176.2 c 0,0.001 59.716,0.001 59.716,0.001" />
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </a>
-
-
+                            <a id="to_about" class="nav-link containsSvg d-flex flex-column align-items-center"
+                                href="#to_about">
+                                <span>À propos de moi</span>
+                                <i class="fa fa-info fa-3x"></i>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a id="to_skills" class="nav-link containsSvg d-flex flex-column align-items-center" href="#to_skills">
+                            <a id="to_skills" class="nav-link containsSvg d-flex flex-column align-items-center"
+                                href="#to_skills">
                                 <span>Compétences</span>
-                                <svg id="skillsSvg" width="55" height="55">
-                                    <g  style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.00300002">
-                                        <g transform="scale(0.189645)">
-                                            <path class="yellow" d="M 273.2961142241955 135.51104081630706 C 269.0131142241955 127.94704081630707 262.2921142241955 121.55204081630707 253.12011422419548 118.33704081630707 C 249.24911422419547 116.97504081630707 245.18411422419547 116.28604081630706 241.15411422419547 116.25404081630707 C 241.0511142241955 116.25004081630706 240.94811422419548 116.25404081630707 240.88311422419548 116.25404081630707 C 229.99911422419547 116.25604081630706 219.9391142241955 120.70304081630707 211.82311422419548 127.48804081630706 C 203.6121142241955 134.37204081630708 197.06711422419548 143.84404081630706 193.11011422419548 155.04604081630706 L 192.11011422419548 157.87504081630706 L 192.1831142241955 157.87504081630706 C 190.3071142241955 164.01204081630706 189.38411422419549 170.14904081630706 189.3251142241955 176.07404081630708 C 189.3201142241955 176.26504081630708 189.3201142241955 176.45604081630708 189.3201142241955 176.64004081630708 C 189.3251142241955 185.86804081630706 191.41111422419547 194.61904081630706 195.62111422419548 202.05404081630707 C 199.90411422419547 209.62704081630707 206.63011422419547 216.02204081630705 215.79711422419547 219.23304081630707 L 216.51911422419548 217.23304081630707 L 215.79711422419547 219.23904081630707 C 219.65111422419548 220.58704081630708 223.70311422419547 221.27104081630708 227.72911422419548 221.30804081630706 L 227.8191142241955 221.30804081630706 C 227.8671142241955 221.30304081630706 227.94811422419548 221.30804081630706 228.04711422419547 221.30804081630706 C 238.9321142241955 221.30304081630706 248.98311422419548 216.86104081630708 257.0901142241955 210.08204081630706 C 265.2751142241955 203.21104081630708 271.81211422419545 193.76904081630707 275.7811142241955 182.59704081630707 L 275.7981142241955 182.56304081630708 L 275.82411422419545 182.48804081630706 C 278.3011142241955 175.43004081630707 279.51411422419545 168.32304081630707 279.5921142241955 161.49004081630707 L 279.5921142241955 160.95004081630708 C 279.5821142241955 151.70004081630708 277.50211422419545 142.94004081630706 273.2921142241955 135.50004081630706 L 273.2961142241955 135.51104081630706 z M 207.50611422419547 176.24104081630708 C 207.54911422419548 170.93404081630706 208.50111422419548 165.30204081630706 210.4801142241955 159.70304081630707 L 210.48511422419548 159.68504081630707 L 210.4981142241955 159.64904081630706 L 210.50711422419548 159.63304081630707 C 213.6401142241955 150.69204081630707 218.84611422419547 143.43304081630706 224.53711422419548 138.68204081630708 C 230.17211422419547 133.96304081630706 236.04311422419548 131.84904081630708 240.76811422419547 131.85604081630706 L 240.97811422419548 131.85604081630706 C 242.8071142241955 131.87904081630705 244.50111422419548 132.16104081630706 246.25711422419548 132.77404081630706 C 250.32111422419547 134.18604081630707 254.09811422419548 137.32304081630707 256.9521142241955 142.33404081630707 C 259.7121142241955 147.17304081630706 261.4071142241955 153.65204081630708 261.39811422419547 160.78104081630707 L 261.39811422419547 161.31904081630708 C 261.35511422419546 166.59804081630708 260.4021142241955 172.21504081630707 258.4411142241955 177.81304081630708 L 258.43711422419545 177.83004081630708 L 258.4111142241955 177.89104081630705 L 258.39811422419547 177.93004081630707 C 255.2651142241955 186.85904081630707 250.05911422419547 194.11704081630708 244.3681142241955 198.85504081630708 C 238.73311422419548 203.57604081630706 232.85311422419548 205.69604081630706 228.1401142241955 205.68904081630706 L 227.9091142241955 205.68904081630706 C 226.1061142241955 205.66804081630707 224.39811422419547 205.37804081630708 222.62611422419548 204.77304081630706 C 218.58311422419547 203.36604081630708 214.80611422419548 200.21904081630706 211.95211422419547 195.21904081630706 C 209.1831142241955 190.36304081630706 207.4931142241955 183.87604081630707 207.49711422419549 176.73904081630707 L 207.49711422419549 176.25004081630706 L 205.35111422419547 176.22004081630706 L 207.51111422419547 176.26004081630705 z"/>
-                                            <path class="yellow" d="M 231.3261142241955 191.87104081630707 C 240.6351142241955 167.64204081630706 242.6821142241955 141.18804081630708 242.69011422419547 110.07204081630707 C 242.69011422419547 108.57804081630707 242.07311422419548 107.11304081630706 240.99111422419548 106.06104081630707 C 239.91011422419547 104.99404081630706 238.42511422419548 104.38704081630706 236.8961142241955 104.38704081630706 L 26.80611422419548 104.38704081630706 C 25.27211422419548 104.38704081630706 23.78111422419548 104.99404081630706 22.70511422419548 106.05004081630707 C 21.61911422419548 107.11204081630707 21.00511422419548 108.57804081630707 21.00511422419548 110.07104081630706 C 21.01111422419548 141.28804081630707 23.83411422419548 168.96404081630706 33.51111422419548 193.75404081630705 C 38.23911422419548 205.89604081630708 44.65111422419548 217.28404081630705 53.08411422419548 227.93904081630706 L 210.18411422419547 227.93904081630706 C 219.60411422419548 216.43904081630706 226.46411422419547 204.50904081630708 231.32411422419548 191.86904081630706 L 231.3261142241955 191.87104081630707 z"/>
-                                            <path class="yellow" d="M 264.1561142241955 238.49104081630708 C 263.2811142241955 236.34604081630707 261.1431142241955 234.92804081630706 258.77811422419546 234.92804081630706 L 5.79811422419548 234.92804081630706 C 3.4521142241954803 234.92804081630706 1.3351142241954803 236.31004081630707 0.44611422419548036 238.43704081630707 C -0.45688577580451967 240.55904081630706 0.03611422419548035 243.00304081630708 1.6971142241954804 244.63204081630707 C 11.72911422419548 254.37404081630706 17.03011422419548 263.1110408163071 27.64811422419548 270.71304081630706 C 38.30511422419548 278.2450408163071 53.18911422419548 283.3460408163071 81.02411422419549 286.5200408163071 L 81.69311422419548 286.5630408163071 L 182.88311422419548 286.5630408163071 L 183.71611422419548 286.5030408163071 C 211.06811422419548 282.61404081630707 225.62111422419548 277.52304081630706 236.20911422419547 270.2360408163071 C 246.7721142241955 262.87604081630707 252.28211422419548 254.51304081630707 262.7931142241955 244.71304081630706 C 264.5131142241955 243.09304081630708 265.0531142241955 240.63304081630707 264.1731142241955 238.48304081630707 L 264.1561142241955 238.49104081630708 z"/>
-                                            <g transform="translate(-0.00388578, 0.00104082)">
-                                                <path class="brown" d="M 105.48 94.952 C 97.388 85.819 93.686 77.564 93.686 69.765 C 93.706 61.508 97.8 55.07 101.974 49.859 C 106.203 44.614 110.736 40.108 113.32 35.865 C 115.058 33.026 115.953 30.526 115.962 27.803 C 115.977 23.78 113.884 18.02 105.676 9.61 C 103.462 7.348 103.539 3.745 105.848 1.5819999999999999 C 108.163 -0.589 111.833 -0.521 114.05 1.749 C 123.301 11.189 127.544 19.646 127.561 27.803 C 127.533 35.902 123.394 42.161 119.25 47.277 C 115.04 52.44 110.544 56.938 107.962 61.284 C 106.215 64.194 105.295 66.826 105.288 69.764 C 105.286 73.884 107.176 79.498 114.249 87.511 C 116.341 89.891 116.075 93.475 113.65 95.526 C 112.556 96.458 111.211 96.917 109.863 96.917 C 108.253 96.918 106.643 96.25 105.493 94.952 L 105.48 94.952 z"/>
-                                                <path class="brown" d="M 131.54 96.233 C 123.443 87.093 119.75 78.838 119.748 71.04 C 119.767 62.78 123.862 56.349 128.027 51.136 C 132.256 45.889 136.789 41.391 139.377 37.14 C 141.12 34.305 142.005 31.807 142.012 29.08 C 142.035 25.054 139.937 19.305 131.735 10.895 C 129.521 8.627 129.598 5.02 131.911 2.856 C 134.222 0.6839999999999999 137.891 0.757 140.111 3.025 C 149.36 12.463 153.595 20.924 153.611 29.079 C 153.588 37.186 149.45 43.429 145.308 48.558 C 141.095 53.715 136.6 58.213 134.014 62.56 C 132.274 65.468 131.345 68.101 131.345 71.039 C 131.338 75.157 133.238 80.773 140.302 88.794 C 142.401 91.165 142.135 94.757 139.719 96.809 C 138.622 97.743 137.272 98.198 135.925 98.198 C 134.275 98.199 132.655 97.532 131.515 96.233 L 131.54 96.233 z"/>
-                                                <path class="brown" d="M160.19,96.227C152.104,87.101 148.406,78.847 148.406,71.051C148.413,62.787 152.516,56.349 156.685,51.136C160.913,45.894 165.452,41.391 168.035,37.14C169.773,34.307 170.669,31.807 170.675,29.08C170.691,25.06 168.6,19.305 160.385,10.895C158.177,8.627 158.254,5.02 160.564,2.856C162.873,0.684 166.541,0.757 168.765,3.025C178.008,12.463 182.259,20.924 182.268,29.079C182.242,37.186 178.109,43.429 173.965,48.558C169.752,53.715 165.257,58.219 162.669,62.569C160.931,65.475 160.003,68.101 159.997,71.05C159.997,75.157 161.892,80.773 168.958,88.795C171.057,91.166 170.791,94.758 168.372,96.81C167.273,97.744 165.924,98.192 164.58,98.192C162.96,98.193 161.34,97.532 160.19,96.227z"/>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
+                                <i class="fa fa-wrench fa-3x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="to_experiences" class="nav-link containsSvg d-flex flex-column align-items-center" href="#to_experiences">
+                            <a id="to_experiences" class="nav-link containsSvg d-flex flex-column align-items-center"
+                                href="#to_experiences">
                                 <span>Expériences</span>
-                                <svg id="experiencesSvg" width="50" height="60">
-                                    <g transform="translate(1, 1) matrix(0.262411, 0, 0, 0.262411, -0.262411, -0.262411) matrix(1, 0, 0, 1, -290.55, -559.43)" style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.00300002">
-                                        <path class="beige" d="M364.35,712.6L344.05,731.95C341.41,735.83 344.53,740.53 349.72,740.18L417.3,739.92C421.91,740.27 425.53,734.73 422.58,730.89L403.92,712.86L401.86,699.5L365.44,698.43L364.35,712.6z" />
-                                        <path class="beige" d="M296.53,569.58L296.16,696.98C298.43,704.52 302.04,706.63 307.06,706.55L461.85,706.32C469.38,706.26 471.45,700.14 471.01,693.7L471.7,569.76C471.48,561.94 467.37,560.92 461.42,560.43L307.66,560.58C300.6,560.93 297.36,563.82 296.53,569.58z"/>
-                                        <path class="beige" d="M300.76,570.32L300.27,668.35C300.35,671.74 302.01,675.05 305.67,675.44L459.43,675.7C465.01,676.33 467.38,674.01 467.55,669.35L467.66,571.88C468.28,566.22 463.67,564.12 458.72,564.53L308.76,564.89C303.64,564.65 301.03,566.57 300.76,570.32z"/>
-                                        <path class="yellow" d="M307.59,571.28L307.34,667.75L460.12,667.75L460.12,571.53L307.59,571.28z"/>
-                                        <path class="beige" d="M344.46,731.39C344.14,735.01 346.56,735.49 349.51,735.93L415.68,735.17C419.63,735.02 422.92,733.98 422.75,730.88"/>
-                                        <path class="beige" d="M307.14,750.22L291.55,773.79L291.83,777.36C292.39,778.79 293.26,778.83 294.21,779.12L472.06,779.04C474.3,778.7 474.04,778.18 474.4,776.84L474.64,773.08C470.49,765.42 466,756.72 462.17,750.11C461.76,749.12 460.88,748.6 460,748.08L310.18,748.78C308.53,748.62 307.87,749.46 307.14,750.22z"/>
-                                        <path d="M292.14,773.43C293.1,774.49 293.78,776.11 295.36,775.93L470.71,775.58C473.34,775.91 473.91,774.19 473.63,772.8"/>
-                                        <path d="M312.86,753.79L300.71,771.65L409.64,771.29L407.86,753.08L312.86,753.79z"/>
-                                        <path d="M412.14,753.43L413.57,761.65L430.71,761.65L428.57,753.08L412.14,753.43z"/>
-                                        <path d="M433.93,753.08L439.29,770.93L466.07,770.93L458.21,753.08L433.93,753.08z"/>
-                                        <path d="M413.93,764.86L415,770.93L432.5,770.58L430.71,764.51L413.93,764.86z"/>
-                                    </g>
-                                </svg>
+                                <i class="fa fa-briefcase fa-3x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="to_projects" class="nav-link containsSvg d-flex flex-column align-items-center" href="#to_projects">
+                            <a id="to_projects" class="nav-link containsSvg d-flex flex-column align-items-center"
+                                href="#to_projects">
                                 <span>Projets</span>
-                                <svg id="projectsSvg" height="73" width="45">
-                                    <g transform="translate(-0.84012558,-0.840096)">
-                                        <g transform="matrix(0.327923,0,0,0.327923,0.840129,0.840096)">
-                                            <g style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.00300002"
-                                                transform="translate(-232.70263,-364.46)">
-                                                <path class="beige" d="m 286.84,574.57 6.4805,7.0924 c 4.5493,1.6295 8.9426,1.7475 14.513,0.26352 l 7.1243,-7.5392 c -9.3725,2.2374 -18.745,1.9392 -28.118,0.18331 z"/>
-                                                <path class="beige" d="m 276.41,541.67 2.3244,5.2164 c -1.4786,1.0092 -3.1468,1.8165 -4.0437,3.3545 0.38986,1.8521 3.5336,2.5344 3.9928,4.4667 -1.2245,1.1142 -3.0942,1.5491 -4.2524,3.1044 0.96834,1.2779 2.4203,3.2687 3.9066,4.0287 -1.5658,0.80201 -1.9524,1.4924 -2.8953,3.4683 0.83016,0.66499 2.2901,2.3492 3.8036,3.5126 1.9378,1.89 6.6677,6.628 6.6677,6.628 0.1461,1.1688 23.146,2.378 29.678,-0.10868 3.109,-2.2198 4.1034,-3.8542 6.9575,-6.8732 1.0087,-0.79442 2.4106,-3.7269 3.0268,-4.6383 -1.1373,-1.719 -1.1077,-1.6388 -2.3417,-2.6135 0.78601,-1.1555 3.2346,-1.7537 3.6166,-3.8106 l -3.6773,-2.9736 c 0.45335,-1.733 3.0843,-2.689 3.5534,-4.4218 -0.45947,-1.4995 -2.5815,-2.2737 -3.62,-3.3898 l 1.3083,-4.9501 z"/>
-                                                <path class="yellow" d="m 299.62,365.71 c -36.217,0 -67.583,30.347 -65.576,67.662 -1.0776,9.7173 11.211,33.103 22.104,46.221 14.774,26.57 16.188,29.741 17.163,58.732 0.75137,3.4661 2.5097,4.5349 4.3134,4.933 19.01,3.7016 33.707,1.6084 45.031,0.2115 2.723,-0.90965 4.3656,-2.6354 4.1742,-5.0022 1.0853,-39.38 7.1053,-36.988 25.172,-67.288 10.005,-13.673 13.7,-33.815 13.79,-43.172 1.0678,-52.15 -46.707,-61.734 -66.172,-62.297 z"/>
-                                                <path class="beige" d="m 275.77,551.02 c 14.959,2.734 34.832,3.3362 49.321,-0.70711"/>
-                                                <path class="beige" d="m 276.13,557.74 c 14.139,2.7383 32.756,3.3516 49.144,-0.31745"/>
-                                                <path class="beige" d="m 276.48,565.17 c 14.893,2.8997 34.649,2.9742 48.671,-0.64737"/>
-                                                <path d="m 286.27,512.61 2.2042,31.134 c 8.6594,1.89 17.679,1.5079 25.073,-0.55104 l 1.9287,-30.859 c -9.4149,1.6932 -19.058,2.2438 -29.206,0.27552 z"/>
-                                                <path d="m 292.33,512.89 -16.417,-71.842 c 22.146,9.6173 39.384,3.6958 55.105,-1.9482 l -19.952,73.514 c -6.2452,1.1806 -11.939,1.7371 -18.736,0.27553 z"/>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
+                                <i class="fa fa-flask fa-3x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="to_education" class="nav-link containsSvg d-flex flex-column align-items-center" href="#to_education">
+                            <a id="to_education" class="nav-link containsSvg d-flex flex-column align-items-center"
+                                href="#to_education">
                                 <span>Formation</span>
-                                <svg id="educationSvg" width="43" height="59">
-                                    <g transform="translate(0.000400543, -0.000701904) matrix(1, 0, 0, 1, 20.571, -489.72)" style="fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:round">
-                                        <path class="yellow" d="M -16.284613406947066 547.6850852740941 C -16.873092890343415 547.584096696934 -18.06316262707649 546.7241173299142 -18.958259844939498 545.7530489436355 L -20.571399472105124 544.0030186188446 L -20.571399472105124 540.4509902044238 C -20.571399472105124 530.3053931877218 -19.176746270894554 500.68297503784 -18.6551673628133 499.75214998165006 C -18.254318444998738 499.03589000330606 -16.31265698736334 498.27843606502864 -1.4491632709683726 493.039911087099 C 3.730581094902302 491.2143452992378 8.425900335785604 489.72070776545615 8.984395369499577 489.72070776545615 C 9.558773843534068 489.72070776545615 10.657028581107642 490.28312414727924 11.512397393380926 491.01530717552055 C 13.036970006689497 492.32028429472194 15.713389115062071 493.2855696827794 17.807151347836594 493.2855696827794 C 19.947256785536307 493.2855696827794 19.98833191673925 493.5549425321254 19.4862409204727 504.2875257511761 C 19.234252714410175 509.6736360124829 18.826266150845594 518.4475533825525 18.57961731574368 523.7849438643227 C 18.280248133842246 530.2630901596362 17.95552882275096 533.8394388542486 17.60288475997397 534.5425088434985 C 17.256994130051467 535.232151186193 16.422162883379652 535.83651410991 15.184720092723037 536.2930540927885 C 7.8906165141110876 538.9842079637526 -9.883388909894013 546.2124804256248 -10.804311571869183 546.8620774861148 C -11.939007120153171 547.662587034438 -14.32734577602917 548.021449800782 -16.284692626100785 547.6855209794396 L -16.284613406947066 547.6850852740941 z M -11.720005769698947 545.372678177057 L -9.678567787955362 544.7795643731683 L -9.678567787955362 540.283877399655 L -9.678567787955362 535.7881904261418 L -12.330547787405841 535.9773855700096 C -14.249077252155493 536.1142525018886 -15.440374885771202 535.9833666161152 -16.638089270838094 535.5041699552733 C -17.548594614099315 535.139852950196 -18.38503004863392 534.9332375144254 -18.496768664953574 535.0449761307452 C -18.81473454319038 535.3629420089819 -19.118322145027314 542.6159506516026 -18.857021727445204 543.6517410864693 C -18.554380794495206 544.851475559956 -16.769874294006165 545.9417291630041 -15.086863373261 545.9551171999824 C -14.357888720745256 545.9609001982038 -12.842822405882877 545.6987560966346 -11.720049340233492 545.3725395435381 z M 3.907556684308968 539.0074191757922 C 10.377781064250655 536.4877351630512 15.828058840069303 534.2720942622811 16.01976919206758 534.0839487722001 C 16.347989989753216 533.7617169425356 16.836518666903192 526.055087542851 17.861574906441064 505.0307202417843 C 18.10421129140714 500.05377690943243 18.229064638624855 495.9082385953541 18.139020187550962 495.8183248558839 C 18.048975736477058 495.72828040480994 12.555258137716983 497.3176265591563 5.930556408024623 499.35023160526026 L -6.113923723304845 503.0458843453724 L -6.37426558912696 505.64973870893897 C -6.618815116655336 508.09563007999145 -6.963061949138184 514.0842020053258 -7.9175339227130515 532.4979020956062 C -8.13773544334611 536.7460292137498 -8.421526178668842 540.9791046926869 -8.548197605464393 541.9051765996537 C -8.705293148245456 543.053497842377 -8.631928289986945 543.5885836161674 -8.317388640148458 543.5885836161674 C -8.063780402392396 543.5885836161674 -2.562513218282966 541.5270239693793 3.907711161658721 539.0073399566384 z M -10.427941372553569 533.8502522687311 C -9.508008949999876 533.6033222056336 -9.400270900942996 532.8077678153752 -8.832863712435712 522.0695719192836 L -8.564215718346233 516.985682729412 L -10.507818045247724 517.3064133561136 C -13.254346104660987 517.759626134536 -14.859722254762222 517.6139975642557 -16.59818658311019 516.7538993685055 L -18.10806404340402 516.0068627489419 L -18.39343916180112 523.8032157621278 C -18.550392110105488 528.091348552899 -18.565978478599565 531.9548666797402 -18.428097541552873 532.3893837378853 C -18.290192838760063 532.8238611864533 -17.78024330244466 533.3710278811855 -17.29486754761267 533.6052789187304 C -16.35200118005753 534.0603137376881 -11.814090397612478 534.2219208112735 -10.42775520754233 533.8498165633856 z M -10.516908443136899 515.4020918465833 C -9.620226842199525 515.1475131741943 -8.774047451757564 514.8355956783439 -8.636483391325747 514.7089242515483 C -8.498939135682358 514.5822607466682 -8.262366976933414 511.91431016582806 -8.110785087251145 508.7801627872712 C -7.858476043616064 503.5639776106901 -7.89087271652916 503.1029221360496 -8.493587881848686 503.334242064907 C -8.855730321156498 503.4732083043596 -10.12732448898107 503.70153374920653 -11.319335094980245 503.84164074447267 C -13.106796469902978 504.0517180572606 -13.829592028428696 503.9357293333439 -15.443484237554646 503.1798439343101 C -16.51975565997139 502.6757328496237 -17.47248481216446 502.33810081647636 -17.56069533982978 502.42948011029034 C -17.64890190653741 502.5208871308082 -17.7810196501511 505.11077119661667 -17.85428548446746 508.18475162792436 C -17.995592649912474 514.1135130922016 -17.83499562053706 514.7563765246256 -16.030026812642582 515.487965409214 C -14.845145930478054 515.9682315286311 -12.375726470771385 515.929731019924 -10.516769809617891 515.4019888616834 z M -0.10751164455302398 497.77979110194883 C 8.02552277193566 494.65570455591416 11.90844959143785 492.97792209931436 11.90844959143785 492.5881638630204 C 11.90844959143785 492.20231905292 11.679581495388017 492.09993621865453 11.215281996402776 492.2780406810017 C -3.6727696576448614 497.9893455683221 -13.32483134668184 501.7894883721887 -13.619922694282486 502.0556647286822 C -14.847344261993738 503.1635049838556 -10.736781204282025 501.86273440171664 -0.10751164455302398 497.7798109067372 z M 4.481653930347761 498.3530605078313 C 10.5268675505908 496.3348337381271 15.473311508761096 494.5471743153201 15.473311508761096 494.38061604462735 C 15.473311508761096 493.4612381561497 11.653482745195522 494.4629524720445 2.898459143287651 497.67823214688195 C -2.493988650316643 499.6586317706856 -7.173464060456286 501.43563621731755 -7.500243069544251 501.62714852143154 C -9.399165793748626 502.74005880244295 -5.320369616677947 501.62556413835716 4.481653930347761 498.3532189461387 z M -4.925620573699686 497.24545791011894 C -0.13286177374287877 495.4715826200589 5.258793828324231 493.4747054122818 7.056276426192326 492.8079970145887 C 8.853560976176128 492.14120939774176 10.324066517071966 491.42906881539113 10.324066517071966 491.2254755903351 C 10.324066517071966 491.0218625604907 9.9230195513731 490.9807795073724 9.432851037741155 491.13417551567477 C -6.248184345026609 496.04140599275456 -16.963367076963095 499.6284492731189 -17.229939529225156 500.05979756511505 C -17.362520704888095 500.2743230333842 -17.26194406732735 500.7017499772712 -17.006390999347502 501.0096748277743 C -16.60827514233621 501.4893468035385 -16.334097651317197 501.49085196745915 -15.090832252862286 501.0202109752188 C -14.292818107881049 500.71810477155634 -9.718585343456159 499.01957085764013 -4.925826543499353 497.2457351771569 z" id="imagebot_3"/>
-                                    </g>
-                                </svg>
+                                <i class="fa fa-graduation-cap fa-3x"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="to_contact" class="nav-link containsSvg d-flex flex-column align-items-center" href="#to_contact">
+                            <a id="to_contact" class="nav-link containsSvg d-flex flex-column align-items-center"
+                                href="#to_contact">
                                 <span>Contact</span>
-                                <svg id="contactSvg" width="58" height="74">
-                                    <g transform="translate(-1.3113e-06, -1.19209e-06) matrix(0.583593, 0, 0, 0.583593, 7.65267e-07, 6.95697e-07) translate(-3.8147e-06, -3.8147e-06) matrix(1, 0, 0, 1, -56.5337, -38.7346)"
-                                        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.00300002">
-                                        <path class="yellow" d="M 147.5983 57.87362 C 147.78192 57.91528 147.84336 58.15921 147.76203 58.34476 L 110.34556 143.65692 C 110.26416 143.84248 110.05989 143.93169 109.8881 143.85565 L 65.57542 117.03075 L 97.42054 46.49068 L 147.5983 57.87362 z"/>
-                                        <path class="black" d="M 151.84706 48.48358 C 151.57058 48.34892 151.27243 48.24761 150.95244 48.18433 L 104.01853 38.90246 C 100.60526 38.22742 96.95909 39.55787 95.1853 43.43896 L 57.28575 126.36334 C 55.51196 130.24443 57.06993 133.95908 59.93164 135.9344 L 100.25844 163.7702 C 103.12016 165.7455 107.37772 163.14164 109.09167 159.23369 L 153.59813 57.75585 C 155.1514 54.21428 154.51961 49.7853 151.84706 48.48358 z M 147.66141 57.89847 C 147.79507 57.9756 147.83356 58.18271 147.76232 58.34507 L 110.34587 143.6572 C 110.26447 143.84276 110.05979 143.93194 109.88799 143.8559 L 65.57542 117.03075 L 97.42091 46.49093 L 147.59838 57.87364 C 147.62128 57.87884 147.64238 57.88744 147.66148 57.89846 L 147.66141 57.89847 z"/>
-                                        <!-- <ellipse transform="rotate(23.6814, 24.3679, 99.4418) matrix(1, 0, 0, 1, -105.22, 5.39511)" ry="4.87428" rx="4.40101" cy="94.04673" cx="129.5878"/> -->
-                                    </g>
-                                </svg>
+                                <i class="fas fa-envelope fa-3x"></i>
                             </a>
                         </li>
                     </ul>
@@ -155,16 +91,29 @@
     <div class="row">
         <div class="col-12">
             <div id="about" class="offset-1 col-10 offset-1 cvSection currentView" hidden>
-                <p>Bienvenue sur mon site CV et portfolio. Je m'appelle Eric Penneçot. Titulaire d'un baccalauréat scientifique obtenu à Libourne et d'un master en bio-informatique qui m'a permis d'acquérir de nouvelles compétences en informatique et programmation, obtenu après une formation initiale scientifique. Plus d'informations sur mon parcours à la page Formation.</p>
+                <p>Bienvenue sur mon site CV et portfolio. Je m'appelle Eric Penneçot. Titulaire d'un baccalauréat
+                    scientifique obtenu à Libourne et d'un master en bio-informatique qui m'a permis d'acquérir de
+                    nouvelles compétences en informatique et programmation, obtenu après une formation initiale
+                    scientifique. Plus d'informations sur mon parcours à la page Formation.</p>
                 <br>
-                <p>Très curieux, je passe une part importante de mon temps libre à lire et regarder articles et documentaires pour répondre aux questions que je me pose sur mes nombreux sujets d'intérêts. J'ai donc une excellente culture générale dans des sujets aussi variés que l'informatique et les sciences bien sûr, mais aussi l'histoire, la géographie, les relations internationales et bien d'autres encore. L'extension de mes compétences à la programmation et mon souhait de faire carrière dans ce domaine témoignent de mon ouverture d'esprit et de ma capacité d'adaptation.</p>
+                <p>Très curieux, je passe une part importante de mon temps libre à lire et regarder articles et
+                    documentaires pour répondre aux questions que je me pose sur mes nombreux sujets d'intérêts. J'ai
+                    donc une excellente culture générale dans des sujets aussi variés que l'informatique et les sciences
+                    bien sûr, mais aussi l'histoire, la géographie, les relations internationales et bien d'autres
+                    encore. L'extension de mes compétences à la programmation et mon souhait de faire carrière dans ce
+                    domaine témoignent de mon ouverture d'esprit et de ma capacité d'adaptation.</p>
             </div>
         </div>
         <div class="col-12">
-            <div id="skills" class="offset-1 col-10 offset-1  justify-content-center align-items-center cvSection" hidden>
+            <div id="skills" class="offset-1 col-10 offset-1  justify-content-center align-items-center cvSection"
+                hidden>
                 <div class="container-fluid  h-100">
                     <div class="row">
-                        <p class="col-12">Ci-dessous mon auto-évaluation dans les principales technologies et outils de développements que je connais. J'ai pour objectif d'agrandir mon espace github d'un projet dans le maximum de ces technologies. Je vous encourage donc à revenir sur mon site, où cette section d'auto-évaluation aura éventuellement changée en fonction de l'expérience obtenue sur mes projets personnels ou professionnels.</p>
+                        <p class="col-12">Ci-dessous mon auto-évaluation dans les principales technologies et outils de
+                            développements que je connais. J'ai pour objectif d'agrandir mon espace github d'un projet
+                            dans le maximum de ces technologies. Je vous encourage donc à revenir sur mon site, où cette
+                            section d'auto-évaluation aura éventuellement changée en fonction de l'expérience obtenue
+                            sur mes projets personnels ou professionnels.</p>
                         <br>
                         <p>Vous pouvez aussi <a href="./documents/CVPennecotEric.pdf">télécharger mon CV</a></p>
                     </div>
@@ -291,16 +240,27 @@
                 <div class="container-fluid">
                     <div class="row mx-auto">
                         <div class="col-12">
-                            <u>URGI (Unité de Recherche Génomique Info) - INRA, 03/2017 - 08/2017(6 mois), Versailles, stage de M2 </u>
+                            <h3>URGI (Unité de Recherche Génomique Info) - INRA, 03/2017 - 08/2017(6 mois), Versailles,
+                                stage de M2 </h3>
                             <br>
                             <br>
-                            <p><a href="https://urgi.versailles.inra.fr/Tools/PASTEClassifier">PASTEClassifier</a> (plus simplement PASTEC, pour <b>P</b>seudo <b>A</b>gent <b>S</b>ystem for <b>T</b>ransposable <b>E</b>lement <b>C</b>lassification) est un logiciel de classification automatique des éléments transposables d'un génome développé à l'URGI avec le language python. Il effectue sa classification à partir de règles de décisions définies dans des fichiers au format yaml.
-                                Mon travail a consisté à développer un outil python en ligne de commande, prenant en entrée les fichiers de résultats de PASTEC obtenus sur deux configurations différentes, afin d' afficher une comparaison claire des différences de résultats à l'aide de fichiers texte et de graphiques. Cet outil doit permettre à l'équipe d'analyse des génomes de l'URGI de faire du benchmarking de la pertinence des résultats de Pastec, c'est-à-dire de choisir quelle configuration est la meilleure pour l'analyse d'un échantillon d'ADN donné.</p>
+                            <p><a href="https://urgi.versailles.inra.fr/Tools/PASTEClassifier">PASTEClassifier</a> (plus
+                                simplement PASTEC, pour <b>P</b>seudo <b>A</b>gent <b>S</b>ystem for <b>T</b>ransposable
+                                <b>E</b>lement <b>C</b>lassification) est un logiciel de classification automatique des
+                                éléments transposables d'un génome développé à l'URGI avec le language python. Il
+                                effectue sa classification à partir de règles de décisions définies dans des fichiers au
+                                format yaml. Mon travail a consisté à développer un outil python en ligne de commande,
+                                prenant en entrée les fichiers de résultats de PASTEC obtenus sur deux configurations
+                                différentes, afin d' afficher une comparaison claire des différences de résultats à
+                                l'aide de fichiers texte et de graphiques. Cet outil doit permettre à l'équipe d'analyse
+                                des génomes de l'URGI de faire du benchmarking de la pertinence des résultats de Pastec,
+                                c'est-à-dire de choisir quelle configuration est la meilleure pour l'analyse d'un
+                                échantillon d'ADN donné.</p>
                             <br>
                         </div>
                     </div>
                     <div class="row">
-                            <div class="col-4"></div>
+                        <div class="col-4"></div>
                         <div class="col-4">
                             <ul>
                                 <p>Environnement technique</p>
@@ -318,234 +278,301 @@
                     </div>
                     <br>
                     <div class="row mx-auto">
-                            <div class="col-12">
-                                <u>Infotel Conseil, 10/2017 - 06/2018 (8 mois), ingénieur de développement </u>
-                                <br>
-                                <br>
-                                <p>Mon contrat de travail a commencé par une formation de 3 mois au développement en Java 8, suivi d'une mission à IT-CE (Informatique et Technologies - Caisse d'Epargne) de 5 mois. Les missions qui m'ont été confiées seront décrites de manière incomplète sur ce site par discrétion vis-à-vis de mon ancien employeur. En bref, elles ont consisté à:</p>
-                                <ol>
-                                    <li>Débugguer une application en C# faisant des requêtes SQL.</li>
-                                    <li>Variabilisation d'un texte écrit en brut dans un PDF généré dynamiquement.</li>
-                                </ol>
-                                <br/>
-                                <div class="row">
-                                    <ul class="col-6">
-                                        <p>Environnement technique de la formation:</p>
-                                        <li><b>Windows</b></li>
-                                        <li><b>Eclipse</b></li>
-                                        <li><b>Java 8</b></li>
-                                    </ul>
-                                    <ul class="col-6">
-                                            <p>Environnement technique à IT-CE:</p>
-                                            <li><b>Windows</b></li>
-                                            <li><b>C#</b></li>
-                                            <li><b>jQuery</b></li>
-                                            <li><b>SQL</b></li>
-                                            <li><b>Visual Studio</b></li>
-                                        </ul>
-                                </div>
+                        <div class="col-12">
+                            <h3>Infotel Conseil, 10/2017 - 06/2018 (8 mois), ingénieur de développement </h3>
+                            <br>
+                            <br>
+                            <p>Mon contrat de travail a commencé par une formation de 3 mois au développement en Java 8,
+                                suivi d'une mission à IT-CE (Informatique et Technologies - Caisse d'Epargne) de 5 mois.
+                                Les missions qui m'ont été confiées seront décrites de manière incomplète sur ce site
+                                par discrétion vis-à-vis de mon ancien employeur. En bref, elles ont consisté à:</p>
+                            <ol>
+                                <li>Débugguer une application en C# faisant des requêtes SQL.</li>
+                                <li>Variabilisation d'un texte écrit en brut dans un PDF généré dynamiquement.</li>
+                            </ol>
+                            <br />
+                            <div class="row">
+                                <ul class="col-6">
+                                    <p>Environnement technique de la formation:</p>
+                                    <li><b>Windows</b></li>
+                                    <li><b>Eclipse</b></li>
+                                    <li><b>Java 8</b></li>
+                                </ul>
+                                <ul class="col-6">
+                                    <p>Environnement technique à IT-CE:</p>
+                                    <li><b>Windows</b></li>
+                                    <li><b>C#</b></li>
+                                    <li><b>jQuery</b></li>
+                                    <li><b>SQL</b></li>
+                                    <li><b>Visual Studio</b></li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
                 </div>
                 </ul>
             </div>
         </div>
-        <div class="offset-1 col-10 offset-1 cvSection" id="projects" hidden>
-            <div class="row">
-                <div class="col-12">
-                    <p>Prochain programme: une application <span class="incoming-program"><b>C#</b></span></p>
-                    <p>Je code une part importante de mon temps libre et suis en permanence sur de nouveaux programmes à titre personnel. C'est pourquoi je vous invite à revenir de temps en temps sur cette page, vous pourriez voir la liste agrandie de nouveaux programmes, dans des languages ou des technologies chaque fois différente de la précédente! À ce jour, voici ceux que j'ai publiés sur mon espace <a href="https://github.com/ericsbricole?tab=repositories">github</a>, où vous pourrez trouver les codes sources.</p>
+        <div class="col-12">
+            <div class="offset-1 col-10 offset-1 cvSection" id="projects" hidden>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Prochain programme: une application <strong id="next">C#</strong></p>
+                        <p>Je code une part importante de mon temps libre et suis en permanence sur de nouveaux
+                            programmes à
+                            titre personnel. C'est pourquoi je vous invite à revenir de temps en temps sur cette page,
+                            vous
+                            pourriez voir la liste agrandie de nouveaux programmes, dans des languages ou des
+                            technologies
+                            chaque fois différente de la précédente! À ce jour, voici ceux que j'ai publiés sur mon
+                            espace
+                            <a href="https://github.com/ericsbricole?tab=repositories">github</a>, où vous pourrez
+                            trouver
+                            les codes sources.</p>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3>eventPositionner</h3>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3>eventPositionner</h3>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="offset-1"></div>
-                <div class="col-md-7">
-                    <img id="eventPositionnerImage" class="img-responsive" src="images/eventPositionnerImage.png">
+                <br>
+                <div class="row">
+                    <div class="offset-1"></div>
+                    <div class="col-md-7">
+                        <img id="eventPositionnerImage" class="img-responsive" src="images/eventPositionnerImage.png">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Il s'agit d'une mappemonde 2D interactive permettant de rentrer un fichier de données au
+                            format
+                            csv et de visualiser sur la carte les pays où les valeurs sont les plus importantes, à
+                            l'aide
+                            d'une légende automatique séparant les pays en 4 groupes égaux. Ce travail personnel est
+                            inspiré
+                            d'un projet de développement validant la fin de mon M1. Je l'ai développé en
+                            <b>JavaScript</b>
+                            avec les bibliothèques <b>d3js</b>, <b>jQuery</b> et <b>jQueryUI</b>. La partie html
+                            bénéficie
+                            quant à elle du framework css <b>Bootstrap</b>, ce qui lui permet de s'adapter à toutes les
+                            tailles d'écran («responsive design»). Les formes des pays proviennent d'un fichier
+                            shapefile
+                            (.sh) du site <a href="http://www.naturalearthdata.com/">NaturalEarth</a>. J'ai utilisé le
+                            logiciel QGis pour convertir ces données en GeoJson. Vous pouvez <a
+                                href="https://ericsbricole.github.io/eventPositionner/">tester</a> ce programme car il
+                            tourne, comme ce site, sur mes pages github.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <p>Il s'agit d'une mappemonde 2D interactive permettant de rentrer un fichier de données au format csv et de visualiser sur la carte les pays où les valeurs sont les plus importantes, à l'aide d'une légende automatique séparant les pays en 4 groupes égaux. Ce travail personnel est inspiré d'un projet de développement validant la fin de mon M1. Je l'ai développé en <b>JavaScript</b> avec les bibliothèques <b>d3js</b>, <b>jQuery</b> et <b>jQueryUI</b>. La partie html bénéficie quant à elle du framework css <b>Bootstrap</b>, ce qui lui permet de s'adapter à toutes les tailles d'écran («responsive design»). Les formes des pays proviennent d'un fichier shapefile (.sh) du site <a href="http://www.naturalearthdata.com/">NaturalEarth</a>. J'ai utilisé le logiciel QGis pour convertir ces données en GeoJson. Vous pouvez <a href="https://ericsbricole.github.io/eventPositionner/">tester</a> ce programme car il tourne, comme ce site, sur mes pages github.</p>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3>Déminons</h3>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3>Déminons</h3>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="offset-2"></div>
-                <div class="col-md-4">
-                        <p>Déminons est une version paramétrable du célèbre jeu de démineur, développé en <b>Java 8</b> avec la bibliothèque graphique <b>JavaFX</b>. Le joueur peut choisir la largeur et la hauteur de son plateau, ainsi que le nombre de bombes. Ce projet est nommé ainsi car je souhaitais en faire une application jouable à deux avec un espace de dialogue (chat). Cependant, j'ai appris que cela obligerait les joueurs à faire de la <a href="https://en.wikipedia.org/wiki/Port_forwarding">redirection de ports</a>. Ne souhaitant pas obliger mes utilisateurs à faire une manipulation qui puisse les rendre mal à l'aise, j'ai décidé de ne pas implémenter cette fonctionnalité. Je n'exclus pas de revenir un jour sur cette décision, mais j'ai préféré développer en priorité d'autres projets dont les fonctionnalités seraient explorables sans manipulation de la part de l'utilisateur.</p>
+                <br>
+                <div class="row">
+                    <div class="offset-2"></div>
+                    <div class="col-md-4">
+                        <p>Déminons est une version paramétrable du célèbre jeu de démineur, développé en <b>Java 8</b>
+                            avec
+                            la bibliothèque graphique <b>JavaFX</b>. Le joueur peut choisir la largeur et la hauteur de
+                            son
+                            plateau, ainsi que le nombre de bombes. Ce projet est nommé ainsi car je souhaitais en faire
+                            une
+                            application jouable à deux avec un espace de dialogue (chat). Cependant, j'ai appris que
+                            cela
+                            obligerait les joueurs à faire de la <a
+                                href="https://en.wikipedia.org/wiki/Port_forwarding">redirection de ports</a>. Ne
+                            souhaitant
+                            pas obliger mes utilisateurs à faire une manipulation qui puisse les rendre mal à l'aise,
+                            j'ai
+                            décidé de ne pas implémenter cette fonctionnalité. Je n'exclus pas de revenir un jour sur
+                            cette
+                            décision, mais j'ai préféré développer en priorité d'autres projets dont les fonctionnalités
+                            seraient explorables sans manipulation de la part de l'utilisateur.</p>
                     </div>
                     <div class="offset-2"></div>
                     <div class="col-md-4">
                         <div id="deminonsarousel" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div id="deminonsImage" class="carousel-item active deminonsCarouselImage">
-                                        <img class="d-block w-100" src="images/deminons.PNG" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item deminonsCarouselImage">
-                                        <img class="d-block w-100" src="images/deminons2.PNG" alt="Second slide">
-                                    </div>
+                            <div class="carousel-inner">
+                                <div id="deminonsImage" class="carousel-item active deminonsCarouselImage">
+                                    <img class="d-block w-100" src="images/deminons.PNG" alt="First slide">
                                 </div>
-                                <a class="carousel-control-prev" href="#deminonsarousel" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#deminonsarousel" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                                <div class="carousel-item deminonsCarouselImage">
+                                    <img class="d-block w-100" src="images/deminons2.PNG" alt="Second slide">
+                                </div>
                             </div>
+                            <a class="carousel-control-prev" href="#deminonsarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#deminonsarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <br>
                 <br>
                 <div class="row">
-                        <div class="col-12 text-center">
-                            <h3>GeoDemande</h3>
-                        </div>
+                    <div class="col-12 text-center">
+                        <h3>GeoDemande</h3>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="offset-2"></div>
-                        <div class="col-md-4">
-                                <div id="geoDemandeCarousel" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div id="geoDemandeImage" class="carousel-item active geoDemandeCarouselImage">
-                                                <img class="d-block w-100 geoDemandeCarouselImage" src="images/GeoDemande.PNG" alt="First slide">
-                                            </div>
-                                            <div class="carousel-item geoDemandeCarouselImage">
-                                                <img class="d-block w-100 geoDemandeCarouselImage" src="images/GeoDemande2.PNG" alt="Second slide">
-                                            </div>
-                                        </div>
-                                        <a class="carousel-control-prev" href="#geoDemandeCarousel" role="button" data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#geoDemandeCarousel" role="button" data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
-                            </div>
-                            <div class="offset-2"></div>
-                        
-                            <div class="col-md-4">
-                                    <p>GeoDemande, que vous pouvez tester à <a href="https://ericsbricole.github.io/GeoDemande/">cette addresse</a>, est une application <b>Angular2+</b>, interface graphique de l'API <a href="https://restcountries.eu/">RestCountries</a>, API distribuée sous licence <a href="http://www.mozilla.org/en-US/MPL/2.0/">MPL 2.0</a>. Cette application vous permet de chercher une liste de pays sous plusieurs critères offerts par RestCountries.</p>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
+                </div>
+                <br>
                 <div class="row">
-                        <div class="col-12 text-center">
-                            <h3>ce site</h3>
+                    <div class="offset-2"></div>
+                    <div class="col-md-4">
+                        <div id="geoDemandeCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div id="geoDemandeImage" class="carousel-item active geoDemandeCarouselImage">
+                                    <img class="d-block w-100 geoDemandeCarouselImage" src="images/GeoDemande.PNG"
+                                        alt="First slide">
+                                </div>
+                                <div class="carousel-item geoDemandeCarouselImage">
+                                    <img class="d-block w-100 geoDemandeCarouselImage" src="images/GeoDemande2.PNG"
+                                        alt="Second slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#geoDemandeCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#geoDemandeCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="offset-1"></div>
-                        <div class="col-12">
-                            <p>J'ai conçu ce site en <b>html</b> avec le framework css <b>Bootstrap</b> et du css personnalisé. Les animations telles que vous pouvez en voir à la section Compétences et le sous-titre de ce site sont en <b>JavaScript</b>, utilisant la bibliothèque <b>d3js</b>. Les autres animations quant à elles sont issues de <b>jQuery</b> et du <b>css</b>.</p>
-                        </div>
+                    <div class="offset-2"></div>
+
+                    <div class="col-md-4">
+                        <p>GeoDemande, que vous pouvez tester à <a
+                                href="https://ericsbricole.github.io/GeoDemande/">cette
+                                addresse</a>, est une application <b>Angular2+</b>, interface graphique de l'API <a
+                                href="https://restcountries.eu/">RestCountries</a>, API distribuée sous licence <a
+                                href="http://www.mozilla.org/en-US/MPL/2.0/">MPL 2.0</a>. Cette application vous permet
+                            de
+                            chercher une liste de pays sous plusieurs critères offerts par RestCountries.</p>
                     </div>
-                    <br>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3>ce site</h3>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="offset-1"></div>
+                    <div class="col-12">
+                        <p>J'ai conçu ce site en <b>html</b> avec le framework css <b>Bootstrap</b> et du css
+                            personnalisé.
+                            Les animations que vous pouvez voir à la section Compétences sont en <b>JavaScript</b>,
+                            utilisant la bibliothèque <b>d3js</b>. Les autres animations quant à elles sont issues de
+                            <b>jQuery</b> et du <b>css</b>.</p>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
         <div class="col-12">
-                <div id="education" class="offset-1 col-10 offset-1 cvSection" hidden>
-                    <br>
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Seul mon master en bioinformatique, diplôme le plus pertinent avec les opportunités d'emplois recherchées, sera détaillé sur cette page.</p>
-                        </div>
+            <div id="education" class="offset-1 col-10 offset-1 cvSection" hidden>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Seul mon master en bioinformatique, diplôme le plus pertinent avec les opportunités d'emplois
+                            recherchées, sera détaillé sur cette page.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Master Bioinformatique - Bordeaux, 09/2015 - 08/2017 (2 ans)</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <span>Principal contenu de la formation en lien avec l'emploi recherché:</span>
+                    </div>
+                </div>
+                <ul>
+                    <li>Algorithmique et programmation - développements en Python et Java</li>
+                    <li>Utilisation des Systèmes Informatiques - language bash et utilisation de Linux</li>
+                    <li>Traitements d'image - Développement de scripts JavaScript d'analyse d'image pour ImageJ</li>
+                    <li>Bases de données - Language SQL</li>
+                    <li>Statistiques et analyse de données - programmation R</li>
+                    <li>Anglais</li>
+                    <li>Stage de développement informatique - programmation python dans mon cas</li>
+                </ul>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Master Biologie Cellulaire, Physiologie, Pathologie - Bordeaux, 09/2013 - 05/2015 (2 ans))
+                        </h3>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <h3>Master Bioinformatique - Bordeaux, 09/2015 - 08/2017 (2 ans)</h3>
+                            <span>Ce master consistait principalement en une étude théorique et bibliographie de la
+                                biologie
+                                cellulaire. Il semble qu'il n'existe plus aujourd'hui, n'apparaissant plus sur le site
+                                de
+                                l'université.</span>
                         </div>
                     </div>
-                    <div class="row">
-                            <div class="col-12">
-                                <span>Principal contenu de la formation en lien avec l'emploi recherché:</span>
-                            </div>
-                        </div>
-                    <ul>
-                        <li>Algorithmique et programmation - développements en Python et Java</li>
-                        <li>Utilisation des Systèmes Informatiques - language bash et utilisation de Linux</li>
-                        <li>Traitements d'image - Développement de scripts JavaScript d'analyse d'image pour ImageJ</li>
-                        <li>Bases de données - Language SQL</li>
-                        <li>Statistiques et analyse de données - programmation R</li>
-                        <li>Anglais</li>
-                        <li>Stage de développement informatique - programmation python dans mon cas</li>
-                    </ul>
-                    <br>
-                    <br>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Licence biologie, santé - Bordeaux, 09/2011 - 05/2013 (2 ans)</h3>
+                    </div>
                     <div class="row">
                         <div class="col-12">
-                            <h3>Master Biologie Cellulaire, Physiologie, Pathologie - Bordeaux, 09/2013 - 05/2015 (2 ans))</h3>
+                            <span>J'ai disposé d'une équivalence me permettant de passer directement en deuxième
+                                année.</span>
                         </div>
-                        <div class="row">
-                                <div class="col-12">
-                                    <span>Ce master consistait principalement en une étude théorique et bibliographie de la biologie cellulaire. Il semble qu'il n'existe plus aujourd'hui, n'apparaissant plus sur le site de l'université.</span>
-                                </div>
-                            </div>
                     </div>
-                    <br>
-                    <br>
-                    <div class="row">
-                            <div class="col-12">
-                                <h3>Licence biologie, santé - Bordeaux, 09/2011 - 05/2013 (2 ans)</h3>
-                            </div>
-                            <div class="row">
-                                    <div class="col-12">
-                                        <span>J'ai disposé d'une équivalence me permettant de passer directement en deuxième année.</span>
-                                    </div>
-                                </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="col-12">
+            <div id="contact" class="offset-1 col-10 offset-1 cvSection" hidden>
+                <div class="row">
+                    <div class="offset-4"></div>
+                    <div class="col-4">
+                        <p>Vous pouvez me contacter à l'adresse suivante: <b>pennecot.eric@gmail.com</b>.</p>
+                        <p>Mes coordonnées sont aussi indiquées dans mon <a
+                                href="./documents/CVPennecotEric.pdf">CV</a>.
+                        </p>
                     </div>
-                    <br>
-                    <br>
+                </div>
+                <br>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6">
+                        <p>Vous pouvez également me contacter ou simplement visiter mes espaces sur les réseaux
+                            suivants:
+                        </p>
+                    </div>
+                    <div class="col-1">
+                        <a href="http://www.linkedin.com/in/eric-penneçot-795610146/" alt="Linkedin"><img
+                                src="images/linkedinLogo.png"></a>
+                    </div>
+                    <div class="col-1">
+                        <a href="http://github.com/ericsbricole?tab=repositories" alt="Linkedin"><img
+                                src="images/GitHubLogo.png"></a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12">
-                    <div id="contact" class="offset-1 col-10 offset-1 cvSection" hidden>
-                        <div class="row">
-                            <div class="offset-4"></div>
-                            <div class="col-4">
-                                <p>Vous pouvez me contacter à l'adresse suivante: <b>pennecot.eric@gmail.com</b>.</p>
-                                <p>Mes coordonnées sont aussi indiquées dans mon <a href="./documents/CVPennecotEric.pdf">CV</a>.</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row justify-content-center align-items-center">
-                                <div class="col-6">
-                                    <p>Vous pouvez également me contacter ou simplement visiter mes espaces sur les réseaux suivants:</p>
-                                </div>
-                                <div class="col-1">  
-                                    <a href="http://www.linkedin.com/in/eric-penneçot-795610146/" alt="Linkedin"><img src="images/linkedinLogo.png"></a>
-                                </div>
-                                <div class="col-1">
-                                    <a href="http://github.com/ericsbricole?tab=repositories" alt="Linkedin"><img src="images/GitHubLogo.png"></a>
-                                </div>
-                            </div>
-                    </div>
-                </div>
+        </div>
     </div>
-
-
-
-
-
 </body>
 <script src="js/portfolio.js"></script>
+
 </html>
